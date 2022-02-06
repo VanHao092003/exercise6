@@ -1,21 +1,15 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ManageStudent {
     private List<Student> students;
 
-
-
-    public List<Student> getStudents() {
-        return students;
+    public ManageStudent(){
+        students = new ArrayList<>();
     }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
-    
     public void addStudent(Student student){
-        students.add(student);
+        this.students.add(student);
     }
 
     public List<Student> searchStudentByAge(int age){

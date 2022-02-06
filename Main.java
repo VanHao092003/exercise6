@@ -11,7 +11,7 @@ public class Main {
             System.out.println("Enter 2: To search student by age.");
             System.out.println("Enter 3: To search student by age and home town.");
             System.out.println("Enter 4: To exit program.");
-            System.out.println("Choose: ");
+            System.out.print("Choose: ");
             String choose = scanner.nextLine();
             switch (choose) {
                 case "1":{

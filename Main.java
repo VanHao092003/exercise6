@@ -42,8 +42,8 @@ public class Main {
                 
                 case "3":{
                     System.out.println("------------------search student by age and home town-------------------");
-                    System.out.println("Enter age: "); int age = scanner.nextInt(); scanner.nextLine();
-                    System.out.println("Enter home town: "); String homeTown = scanner.nextLine();
+                    System.out.print("Enter age: "); int age = scanner.nextInt(); scanner.nextLine();
+                    System.out.print("Enter home town: "); String homeTown = scanner.nextLine();
                     List<Student> students = manageStudent.searchStudentByAgeAndHomeTown(age, homeTown);
                     if(students.size()> 0){
                         students.stream().forEach(System.out::println);

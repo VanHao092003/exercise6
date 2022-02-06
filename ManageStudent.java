@@ -17,7 +17,6 @@ public class ManageStudent {
     }
 
     public List<Student> searchStudentByAgeAndHomeTown(int age, String homeTown){
-
-        return this.students.stream().filter(o -> o.getAge() == age && o.getHomeTown() == homeTown).collect(Collectors.toList());
+        return this.students.stream().filter(o -> o.getAge() == age && o.getHomeTown().equals(homeTown)).collect(Collectors.toList());
     }
 }

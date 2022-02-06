@@ -29,7 +29,7 @@ public class Main {
                 
                 case "2":{
                     System.out.println("------------------search student by age-------------------");
-                    System.out.print("Enter age you want to search: "); int age = scanner.nextInt();
+                    System.out.print("Enter age you want to search: "); int age = scanner.nextInt(); scanner.nextLine();
                     List<Student> students = manageStudent.searchStudentByAge(age);
                     if(students.size() > 0){
                         students.stream().forEach(System.out::println);
